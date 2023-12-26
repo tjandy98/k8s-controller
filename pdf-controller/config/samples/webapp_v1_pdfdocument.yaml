@@ -1,0 +1,15 @@
+apiVersion: webapp.github.com/v1
+kind: PdfDocument
+metadata:
+  labels:
+    app.kubernetes.io/name: pdfdocument
+    app.kubernetes.io/instance: pdfdocument-sample
+    app.kubernetes.io/part-of: pdf-controller
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: pdf-controller
+  name: pdfdocument-sample
+spec:
+  documentName: my-text
+  text: |
+    ### Test document
+    Test content
